@@ -31,7 +31,7 @@ class ConversorMonedas(QDialog):#Hereda de QDialog
         self.ui.rbn_rusia.toggled.connect(self.convertir_divisa)
         self.ui.rbn_brasil.toggled.connect(self.convertir_divisa)
         
-        # Se muestra la interface con sus componentes que hemos diseñado
+        # Se muestra la interface con los componentes que hemos diseñado
         self.show() 
     #end __init__  
         
@@ -40,8 +40,8 @@ class ConversorMonedas(QDialog):#Hereda de QDialog
         euros = self.ui.txt_cantidad.text()
         euros_float = float(euros.replace(",","."))
         
-        # En cada selección de radibutton se ejecuta el cálculo correspondiente que 
-        # es visualizado en su label correspondiente
+        # En cada selección de radiobutton se ejecuta el cálculo correspondiente que 
+        # es visualizado en su label asignado
         
         if self.ui.rbn_usa.isChecked() == True:
             dolares = round(euros_float * 1.10,2)
