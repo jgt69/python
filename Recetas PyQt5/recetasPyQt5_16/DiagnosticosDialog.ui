@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiagnosticosDialog</class>
+ <widget class="QDialog" name="DiagnosticosDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>362</width>
+    <height>291</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Diagnósticos</string>
+  </property>
+  <widget class="QLabel" name="lbl_seleccion_diagnostico">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Seleccione el diagnóstico</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="lst_diagnosticos">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>256</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Rayos X - 5€</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Nivel de azucar - 3€</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Prueba de hemoglobina -7€</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Análisis de orina - 8€</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Análisis de PSA - 10€</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="lbl_resultado">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>250</y>
+     <width>251</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>12</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

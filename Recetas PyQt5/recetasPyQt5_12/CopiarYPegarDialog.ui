@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CopiarPegarDialog</class>
+ <widget class="QDialog" name="CopiarPegarDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>257</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Copiar y Pegar</string>
+  </property>
+  <widget class="QLineEdit" name="txt_origen">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_copiar">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_pegar">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>130</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pegar</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_destino">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>180</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_pegar</sender>
+   <signal>clicked()</signal>
+   <receiver>txt_destino</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_copiar</sender>
+   <signal>pressed()</signal>
+   <receiver>txt_origen</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_copiar</sender>
+   <signal>released()</signal>
+   <receiver>txt_origen</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>231</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
