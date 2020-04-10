@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaTienda</class>
+ <widget class="QMainWindow" name="VentanaTienda">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mi Tienda</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbl_mi_tienda">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>381</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAMING SHOP</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_logo">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>90</y>
+      <width>451</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/razer.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>621</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuTienda">
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Productos</string>
+    </property>
+    <addaction name="submenu_registrar_periferico"/>
+    <addaction name="submenu_listado_1"/>
+    <addaction name="submenu_listado_2"/>
+    <addaction name="submenu_listado_3"/>
+   </widget>
+   <addaction name="menuTienda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="submenu_registrar_periferico">
+   <property name="text">
+    <string>Registrar producto</string>
+   </property>
+  </action>
+  <action name="submenu_listado_1">
+   <property name="text">
+    <string>Listado 1</string>
+   </property>
+  </action>
+  <action name="submenu_listado_2">
+   <property name="text">
+    <string>Listado 2</string>
+   </property>
+  </action>
+  <action name="submenu_listado_3">
+   <property name="text">
+    <string>Listado 3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
